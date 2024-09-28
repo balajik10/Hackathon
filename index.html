@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images\national-emblem.svg" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Sangyaan</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section long_section px-0">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.html">
+          <img src="images\national-emblem.svg" alt="#" style="width: 50px; height: 50px;">
+          <span>
+            Sangyaan
+          </span>
+        </a>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav ">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="quote_btn-container">
+            <a href="">
+              <span>
+                Login
+              </span>
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </a>
+            <form class="form-inline">
+              <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- end header section -->
+  </div>
+
+   <!-- contact section -->
+ <!-- ML Input Section -->
+ <style>
+  /* Reset some default styles */
+  body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Global styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+  }
+
+  /* ML Input Section styles */
+  .ml_input_section {
+    padding: 50px 0;
+  }
+
+  .container {
+    max-width: 2000px;
+    margin: -30px auto;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .col-md-6 {
+    width: 60%;
+  }
+
+  /* Form Container styles */
+  .form_container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+
+  .heading_container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Input Group styles */
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  /* Button styles */
+  .btn_box button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+
+  .btn_box button:hover {
+    background-color: #45a049;
+  }
+</style>
+  <title>Your Page Title</title>
+</head>
+
+<body>
+
+  <!-- ML Input Section -->
+  <section class="ml_input_section">
+    <div class="container">
+      <div class="col-md-6">
+        <div class="form_container">
+          <div class="heading_container">
+            <h2>
+              UPI Fraud Prediction 
+            </h2>
+          </div>
+          <form id="mlForm" action="/predict">
+            <div class="input-group">
+              <label for="time">Time </label>
+              <input type="number" id="time" name="time" placeholder="Enter Hour in Numeric"/>
+            </div>
+            <div class="input-group">
+              <label for="day">Day</label>
+              <input type="number" id="day" name="day" placeholder="Enter Day in Numeric"/>
+            </div>
+            <div class="input-group">
+              <label for="month">Month </label>
+              <input type="number" id="month" name="month" placeholder="Enter Month in Numeric"/>
+            </div>
+            <div class="input-group">
+              <label for="year">Year </label>
+              <input type="number" id="year" name="year" placeholder="Enter Year in Numeric" />
+            </div>
+            <div class="input-group">
+              <label for="upiNumber">UPI Number</label>
+              <input type="text" id="upiNumber" name="upiNumber" placeholder="Enter UPI Number"/>
+            </div>
+            <div class="input-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter Age" />
+            </div>
+            <div class="input-group">
+              <label for="transactionAmount">Transaction Amount</label>
+              <input type="number" id="transactionAmount" name="transactionAmount" placeholder="Enter Transaction Amount"/>
+            </div>
+            <div class="input-group">
+              <label for="zipcode">Zipcode</label>
+              <input type="text" id="zipcode" name="zipcode" placeholder="Enter Zip Code" />
+            </div>
+            <div class="btn_box">
+              <button type="button" onclick="sendToBackend()">
+                PREDICT
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end contact section -->
+  <!-- info section -->
+  <section class="info_section long_section">
+
+    <div class="container">
+      <div class="contact_nav">
+        <a href="">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          <span>
+            Call : +91 6263545268
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <span>
+            Email: dcp-newdelhi-dl@nic.in
+          </span>
+        </a>
+        <a href="">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>
+            5th Floor, NDCC-II Building, Jai Singh Road, New Delhi.
+          </span>
+        </a>
+      </div>
+
+      <div class="info_top ">
+        <div class="row ">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="info_links">
+              <h4>
+                QUICK LINKS
+              </h4>
+              <div class="info_links_menu">
+                <a class="" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="" href="about.html"> About</a>
+                <a class="" href="services.html">Services</a>
+                <a class="" href="blog.html">Blog</a>
+                <a class="" href="contact.html">Contact Us</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3 mx-auto">
+            <div class="info_post">
+              <h5>
+                  FEEDS
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="images\bank.jpeg" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="images\upi.jpg" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="images\police.jpeg" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="images\qr.jpeg" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="images\creditcard.jpeg" alt="">
+                </div>
+                <div class="img-box">
+                  <img src="images\lock.jpeg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info_form">
+              <h4>
+                SIGN UP TO OUR NEWSLETTER
+              </h4>
+              <form action="">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">
+                  Enquire
+                </button>
+              </form>
+              <div class="social_box">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> India Cyber Crime 
+        <a> Coordination Center , All Rights Reserved</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
